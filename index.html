@@ -1,0 +1,48 @@
+<head>
+  <script src="jquery-3.6.1.min.js"></script>
+  
+  <style>
+    
+    img{
+      position: absolute;
+      display: block;
+    }
+    
+    .over{
+      display: block;
+    }
+  
+  
+  </style>
+  
+  
+</head>
+
+
+<img id="water" src="waterbase.jpg" onclick='changeImage(this);'>
+
+
+<script>
+  
+  let imgStep = 0;
+  
+  function changeImage(img) {
+    
+    if (imgStep<5){
+    let imgSource;
+    imgStep++;
+    imgSource = `waterlvl${imgStep}.jpg`;
+    document.getElementById("water").src = `waterlvl${imgStep}.jpg`;
+    console.log(imgStep);
+    console.log(imgSource);
+      
+    }
+    
+    
+}
+  
+  
+  
+ 
+  
+</script>
